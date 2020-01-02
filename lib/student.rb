@@ -17,8 +17,8 @@ class Student
       id INTEGER PRIMARY KEY,
       name TEXT,
       grade TEXT
-    )
-    SQL
+      )
+      SQL
 
     DB[:conn].execute(sql)
   end
