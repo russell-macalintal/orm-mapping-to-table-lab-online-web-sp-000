@@ -12,7 +12,7 @@ class Student
   end
 
   def self.create_table
-    sql = <<- SQL
+    sql = <<-SQL
           CREATE TABLE students
           (id INTEGER PRIMARY KEY, name TEXT, grade TEXT);
           SQL
@@ -29,7 +29,7 @@ class Student
   end
 
   def save
-    sql = <<- SQL
+    sql = <<-SQL
           INSERT INTO students (name, grade)
           VALUES (?, ?);
           SQL
